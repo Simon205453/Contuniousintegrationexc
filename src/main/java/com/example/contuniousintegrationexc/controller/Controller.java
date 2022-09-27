@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController
+@org.springframework.stereotype.Controller
 public class Controller {
 
     @GetMapping("/")
