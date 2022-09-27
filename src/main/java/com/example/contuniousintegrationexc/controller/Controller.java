@@ -14,4 +14,8 @@ public class Controller {
         return "/index";
     }
 
+    @GetMapping("/rasmus")
+    public String rasmusSide() {
+        return "rasmusSide";
+    }
 }
