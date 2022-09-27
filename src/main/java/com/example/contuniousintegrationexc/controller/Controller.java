@@ -1,17 +1,14 @@
 package com.example.contuniousintegrationexc.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@Controller
-public class MyController {
+@org.springframework.stereotype.Controller
+public class  Controller {
 
-    @GetMapping()
+    @GetMapping("/")
     public String index(){
         return "index";
     }
-
 
     @GetMapping("/skerder")
     public String skerder(){
@@ -28,6 +25,13 @@ public class MyController {
         return "simon";
     }
 
+    @GetMapping("/rasmus")
+    public String rasmusSide() {
+        return "rasmusSide";
+    }
 
-
+    @GetMapping("/toby")
+    public String toby(){
+        return "TobyHTML";
+    }
 }
