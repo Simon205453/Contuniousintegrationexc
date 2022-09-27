@@ -1,17 +1,21 @@
 package com.example.contuniousintegrationexc.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.Controller;
 
 import java.util.List;
 
-@RestController
+@Controller
+public class MainController {
 
-public class Controller {
-
-    @GetMapping
+    @GetMapping("/")
     public String index(){
-        return "/index";
+        return "index";
+    }
+
+    @GetMapping("/asger")
+    public String asger(){
+        return "asger";
     }
 
     @GetMapping("/rasmus")
