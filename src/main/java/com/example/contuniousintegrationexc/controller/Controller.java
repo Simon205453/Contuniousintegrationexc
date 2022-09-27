@@ -2,9 +2,6 @@ package com.example.contuniousintegrationexc.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 
-import org.springframework.web.bind.annotation.RestController;
-
-
 @org.springframework.stereotype.Controller
 public class Controller {
 
@@ -12,7 +9,6 @@ public class Controller {
     public String index(){
         return "index";
     }
-
 
     @GetMapping("/skerder")
     public String skerder(){
@@ -24,8 +20,18 @@ public class Controller {
         return "asger";
     }
 
+    @GetMapping("/simon")
+    public String simon(){
+        return "simon";
+    }
+
     @GetMapping("/rasmus")
     public String rasmusSide() {
         return "rasmusSide";
+    }
+
+    @GetMapping("/toby")
+    public String toby(){
+        return "TobyHTML";
     }
 }
